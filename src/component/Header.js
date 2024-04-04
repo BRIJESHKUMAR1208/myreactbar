@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import './Header.css'; // Import your custom CSS file
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -22,8 +22,10 @@ const Header = () => {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 custom-nav" navbarScroll>
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#action2">Link</Nav.Link>
+            <Link to="/bar-chart" className="nav-link">BarChart</Link>
+            <Link to="/piechart" className="nav-link">MyPieChart</Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
