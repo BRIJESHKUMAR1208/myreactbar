@@ -26,6 +26,7 @@ const Header = () => {
             <Nav.Link href="#action2">Link</Nav.Link>
             <Link to="/bar-chart" className="nav-link">BarChart</Link>
             <Link to="/piechart" className="nav-link">MyPieChart</Link>
+            <Link to="/aboutus" className="nav-link">About Us</Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

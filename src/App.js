@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/component/Header';
 import Sidebar from '../src/component/Sidebar';
 import SliderComponent from '../src/component/SliderComponent';
-
+import AboutUs from '../src/component/aboutus';
 import MyPieChart from '../src/component/MyPieChart';
 import BarChartComponent from '../src/component/barChartData';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -29,7 +29,7 @@ function App() {
               <Routes>
                 <Route path="/piechart" element={<MyPieChart />} />
                 <Route path="/bar-chart" element={<BarChartComponent />} />
-               
+               <Route path="/aboutus" elsement={<AboutUs/>}/>
               </Routes>
             </div>
             </div>
