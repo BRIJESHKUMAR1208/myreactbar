@@ -1,0 +1,9 @@
+.slider-container {
+    width: 100%;
+    height: 50%; /* Make the slider container full width */
+}
+
+.slider-image {
+    width: 100%; /* Make the images inside the slider full width */
+    height: 50%; /* Maintain the aspect ratio */
+}

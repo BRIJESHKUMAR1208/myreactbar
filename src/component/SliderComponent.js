@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import image1 from '../Images/istockphoto-1360547127-1024x1024.jpg';
+import '../component/slider.css';
 const SliderComponent = () => {
     const settings = {
         dots: true,
@@ -16,13 +17,13 @@ const SliderComponent = () => {
 
     return (
         <div>
-            <h2>Image Slider</h2>
+            
             <Slider {...settings}>
                 <div>
-                    <img src="../src/Images/istockphoto-1360547127-1024x1024.jpg" alt="Image 1" />
+                    <img src={image1} alt="Image 1" className="slider-image" />
                 </div>
                 <div>
-                    <img src="../src/Images/pexels-assedrani-official-20246374.jpg" alt="Image 2" />
+                    <img src="../src/Images/pexels-assedrani-official-20246374.jpg" alt="Image 2"className="slider-image" />
                 </div>
                 {/* <div>
                     <img src="image3.jpg" alt="Image 3" />
