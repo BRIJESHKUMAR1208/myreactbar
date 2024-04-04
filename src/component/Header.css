@@ -1,0 +1,32 @@
+.custom-navbar {
+    background-color: lightseagreen; /* Change background color as desired */
+  }
+  
+  .custom-brand {
+    color: #343a40; /* Change brand text color as desired */
+  }
+  
+
+  .custom-nav .nav-link {
+    color: #343a40; /* Change nav link color as desired */
+  }
+  
+  .custom-nav .nav-link:hover {
+    color: #007bff; /* Change nav link hover color as desired */
+  }
+  
+  .disabled-link {
+    color: #6c757d; /* Change disabled link color as desired */
+  }
+  
+  .custom-search {
+    background-color: #ffffff; /* Change search input background color as desired */
+    color: #495057; /* Change search input text color as desired */
+    border-color: #ced4da; /* Change search input border color as desired */
+  }
+  
+  .custom-search:focus {
+    border-color: #80bdff; /* Change search input border color on focus as desired */
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Change search input box shadow on focus as desired */
+  }
+  
