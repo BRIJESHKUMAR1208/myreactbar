@@ -13,7 +13,7 @@ const BarChartComponent = () => {
     return (
        
             <div>
-                <h2 style={{alignItems: 'center'}}>Bar Chart Example</h2>
+                <h2 style={{textAlign: 'center'}}>Bar Chart Example</h2>
                 <BarChart width={600} height={400} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="name" />

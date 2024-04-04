@@ -15,7 +15,7 @@ const MyPieChart = () => {
 
   return (
     <div>
-      <h2>Pie Chart Example</h2>
+      <h2 style={{textAlign: 'center'}}>Pie Chart Example</h2>
       <PieChart width={400} height={400}>
         <Pie
           data={pieChartData}
