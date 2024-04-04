@@ -13,6 +13,7 @@ const Sidebar = () => {
     //   </Nav>
     // </div>
     <div className="sidebar">
+<<<<<<< HEAD
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -22,6 +23,15 @@ const Sidebar = () => {
         </li>
         {/* Add other sidebar links as needed */}
       </ul>
+=======
+      <Nav className="flex-column">
+      <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/bar">Bar Chart</Nav.Link>
+        <Nav.Link href="/pie">Pie Chart</Nav.Link>
+    
+        {/* Add more sidebar links as needed */}
+      </Nav>
+>>>>>>> c9b55f21b5c7e300f48ca5c69d0e46293f8c195d
     </div>
   );
 }
