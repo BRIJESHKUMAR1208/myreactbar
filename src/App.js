@@ -9,6 +9,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
   return (
+   
     <Router>
       <Container fluid>
         <Row>
@@ -16,17 +17,21 @@ function App() {
             <Sidebar />
           </Col> */}
           <Col md={12}>
-            <div className="App">
+          <div className="App">
               <Header />
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+           
               <Routes>
                 <Route path="/piechart" element={<MyPieChart />} />
                 <Route path="/bar-chart" element={<BarChartComponent />} />
               </Routes>
             </div>
+            </div>
           </Col>
         </Row>
       </Container>
     </Router>
+  
   );
 }
 
