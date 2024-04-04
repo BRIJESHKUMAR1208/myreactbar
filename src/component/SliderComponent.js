@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import image1 from '../Images/istockphoto-1360547127-1024x1024.jpg';
+import image2 from '../Images/pexels-assedrani-official-20246374.jpg';
 import '../component/slider.css';
 const SliderComponent = () => {
     const settings = {
@@ -20,10 +21,12 @@ const SliderComponent = () => {
             
             <Slider {...settings}>
                 <div>
-                    <img src={image1} alt="Image 1" className="slider-image" />
+                    
+                    <img src={image1} alt="Image 1" style={{ width: '100%', height: '200px', display: 'block', margin: '0 auto' }} />
                 </div>
                 <div>
-                    <img src="../src/Images/pexels-assedrani-official-20246374.jpg" alt="Image 2"className="slider-image" />
+                    
+                    <img src={image2} alt="Image 2" style={{ width: '100%', height: '200px', display: 'block', margin: '0 auto' }} />
                 </div>
                 {/* <div>
                     <img src="image3.jpg" alt="Image 3" />
