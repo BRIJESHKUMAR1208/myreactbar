@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/component/Header';
 import Sidebar from '../src/component/Sidebar';
+import SliderComponent from '../src/component/SliderComponent';
+
 import MyPieChart from '../src/component/MyPieChart';
 import BarChartComponent from '../src/component/barChartData';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -19,11 +21,15 @@ function App() {
           <Col md={12}>
           <div className="App">
               <Header />
+              <div>
+             <SliderComponent />
+              </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
            
               <Routes>
                 <Route path="/piechart" element={<MyPieChart />} />
                 <Route path="/bar-chart" element={<BarChartComponent />} />
+               
               </Routes>
             </div>
             </div>
