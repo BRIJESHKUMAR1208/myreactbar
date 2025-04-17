@@ -23,7 +23,9 @@ const Header = () => {
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0 custom-nav" navbarScroll>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="/postpet">Pet Post</Nav.Link>
+            <Nav.Link href="/get">GetData </Nav.Link>
+            <Nav.Link href="/task">Example </Nav.Link>
             <Link to="/bar-chart" className="nav-link">BarChart</Link>
             <Link to="/piechart" className="nav-link">MyPieChart</Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">

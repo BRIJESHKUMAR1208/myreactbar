@@ -8,10 +8,19 @@ import SliderComponent from '../src/component/SliderComponent';
 import MyPieChart from '../src/component/MyPieChart';
 import BarChartComponent from '../src/component/barChartData';
 import { Container, Row, Col } from 'react-bootstrap';
+import GetData from './component/GetData';
+import PetForm from './component/PetForm';
+import Example from './component/Example';
+import ItemList from './component/ItemList';
 
 function App() {
+
+  
   return (
-   
+   <>
+
+
+    
     <Router>
       <Container fluid>
         <Row>
@@ -21,15 +30,20 @@ function App() {
           <Col md={12}>
           <div className="App">
               <Header />
-              <div>
-             <SliderComponent />
-              </div>
+              <Routes>
+              <Route path="/" element={<SliderComponent />} />
+              </Routes>
+          
+             
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
            
               <Routes>
+               
                 <Route path="/piechart" element={<MyPieChart />} />
                 <Route path="/bar-chart" element={<BarChartComponent />} />
-               
+                <Route path="/get" element={<GetData />} />
+                <Route path="/postpet" element={<PetForm />} />
+                <Route path="/task" element={<Example />} />
               </Routes>
             </div>
             </div>
@@ -37,7 +51,7 @@ function App() {
         </Row>
       </Container>
     </Router>
-  
+    </>
   );
 }
 
