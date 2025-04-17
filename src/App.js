@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../src/component/Header';
 import Sidebar from '../src/component/Sidebar';
 import SliderComponent from '../src/component/SliderComponent';
-
+import AboutUs from '../src/component/aboutus';
 import MyPieChart from '../src/component/MyPieChart';
 import BarChartComponent from '../src/component/barChartData';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -44,6 +44,7 @@ function App() {
                 <Route path="/get" element={<GetData />} />
                 <Route path="/postpet" element={<PetForm />} />
                 <Route path="/task" element={<Example />} />
+               <Route path="/aboutus" elsement={<AboutUs/>}/>
               </Routes>
             </div>
             </div>
